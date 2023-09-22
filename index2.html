@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <!-- Link Script  -->
+     <script src="script2.js" defer></script>
+
+    <link rel="stylesheet" href="style2.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="wrapper-content">
+            <h1>WEATHER APP</h1>
+
+            <div class="wrapper_btn">
+                <p class="tab currentTab" data-userWeather>Your Weather</p>
+                <p class="tab" data-searchWeather>Search Weather</p>
+            </div>
+
+            <div class="grant-access-container subcontainer">
+                <img src="Images/location.png" width="80" height="80" class="img">
+                <h2>Grant Location Access</h2>
+                <p class="loc-para">Allow access to get weather information</p>
+                <button class="btn" data-grantAccess>Grant Access</button>
+            </div>
+
+            <div class="loading-container subcontainer">
+                <img src="Images/loading.gif" width="150" height="150" >
+                <p class="loc-para">Loading</p>
+            </div>
+
+            <!-- Search form -->
+            <form class="form-container subcontainer" data-searchForm>
+                <input type="text" placeholder="Search for city..." data-searchInput>
+                <button class="btn2" type="submit">
+                    <img src="Images/search.png" width="28" height="28">
+                </button>
+            </form>
+
+            <div class="userInfoContainer subContainer">
+                <div class="name">
+                    <p data-cityName></p>
+                    <img data-countryFlag>
+                </div>
+
+                <p data-weatherDesc></p>
+                <img data-weatherIcon>
+
+                <p data-temp></p>
+
+                
+                <div class="parameterContainer">
+
+                    <!-- windspeed -->
+                    <div class="parameter">
+                        <img src="Images/wind.jpg" width="80" height="80">
+                        <p class="paracontainer">Windspeed</p>
+                        <p class="parameterValue" data-windspeed></p>
+                    </div>
+
+                    <!-- Humidity -->
+                    <div class="parameter">
+                        <img src="Images/humidity.jpg" width="80" height="80">
+                        <p class="paracontainer">Humidity</p>
+                        <p class="parameterValue" data-humidity></p>
+                    </div>
+
+                    <!-- cloud -->
+                    <div class="parameter">
+                        <img src="Images/cloud.png" width="80" height="80">
+                        <p class="paracontainer">Clouds</p>
+                        <p class="parameterValue" data-clouds></p>
+                    </div>
+
+                </div>
+            </div>
+            <div class="errorContainer subContainer">
+                <img src="Images/not-found.jpg "width="150" height="150" data-errorImg />
+                <p data-errorText></p>
+                <button class="btn erbtn" data-errorButton>Retry Now</button>
+              </div>
+
+
+        </div>
+
+    </div>
+</body>
+
+</html>

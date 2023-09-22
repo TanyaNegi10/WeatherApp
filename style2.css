@@ -1,0 +1,161 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Merriweather Sans", sans-serif;
+}
+.wrapper{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(182, 216, 236);
+    position: relative;
+}
+h1{
+   font-size: 2.8rem;
+    text-align: center;
+    color: transparent;
+    background:linear-gradient(to right, rgb(24, 8, 3),rgb(49, 65, 143),rgb(18, 112, 116));
+    -webkit-background-clip: text;
+    margin: 2rem 0;
+}
+h2{
+    font-size: 2rem;
+     color: transparent;
+     background:linear-gradient(to right,  rgb(24, 8, 3),rgb(49, 65, 143),rgb(18, 112, 116));
+     -webkit-background-clip: text;
+     margin: 2rem 0;
+ }
+.wrapper_btn{
+    display: flex;
+    justify-content: space-between;  
+    width: 90%;
+    margin: 2rem auto;
+    max-width: 550px;
+}
+.tab{
+    font-size: 1rem;
+    padding: 0.5rem;
+    cursor: pointer;
+}
+.tab.currentTab{
+    background-color: rgba(136, 136, 120, 0.233);
+    border-radius: 0.2rem;
+}
+.btn{
+    all: unset;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    padding:10px 30px;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    background-color: rgb(56, 133, 177);
+    color: aliceblue;
+    border-style: none;
+    
+}
+.wrapper-content{
+    position: absolute;
+    width: 60%;
+    height: 100%;
+    margin-left:25rem ;
+
+}
+.img{
+    margin: 2rem 40%;
+}
+.loc-para{
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+
+}
+
+.loading-container{   
+    display: none;  
+}
+
+.loading-container.active{   
+    display: flex;  
+}
+
+
+.subcontainer{
+    text-align: center;
+}
+
+.form-container input{
+    width: 32rem;
+    height: 2.5rem;
+    padding: 1rem  0.9rem;
+    background-color: rgba(136, 136, 120, 0.233);
+    border-style: none;
+    border-radius: 0.8rem;
+    font-size: 1.2rem;
+    margin-top: 2rem;
+}
+
+.form-container input:focus {
+    outline: 2px solid rgba(255, 255, 255, 0.7);
+}
+
+.btn2{
+    background-color: rgb(75, 147, 189);
+    border-radius: 2rem;
+    border: none;
+    padding: 0.4rem;
+    margin: 1rem 0.4rem;
+}
+
+.parameterContainer{
+    display: flex;
+    margin: 2.5rem;
+    justify-content: center;
+}
+
+.parameter{
+    width: 15rem;
+    height: 10rem;
+    background-color: rgba(136, 136, 120, 0.233);
+    border-radius: 0.6rem;
+    text-align: center;
+    margin-right: 2rem;
+    
+}
+
+.errorContainer{
+    text-align: center;
+    display: none;
+}
+.errorContainer.active{
+    display: flex;
+}
+.erbtn{
+    margin: 1rem;
+}
+
+.paracontainer{
+    margin: 1rem;
+}
+
+
+.form-container{
+    display: none;
+}
+.form-container.active{
+    display: flex;
+}
+
+
+.grant-access-container {
+    display: none;
+}
+.grant-access-container.active{
+   display:block;
+}
+
+
+.userInfoContainer {
+    display: none;
+}
+.userInfoContainer.active {
+    display:block;
+}
