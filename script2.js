@@ -4,7 +4,7 @@ const API_KEY = "168771779c71f3d64106d8a88376808a";
 //Tab switching
 const userTab=document.querySelector("[data-userWeather]");
 const searchTab=document.querySelector("[data-searchWeather]");
-const searchForm=document.querySelector("[data-searchForm");
+const searchForm=document.querySelector("[data-searchForm]");
 const userInfoContainer=document.querySelector(".userInfoContainer");
 const grantAccessContainer=document.querySelector(".grant-access-container");
 
@@ -73,7 +73,7 @@ async function fetchWeatherInfo(coordinates)
     loadingContainer.classList.add("active");
 
     try{
-        const response=await fetch('https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${API_KEY}&units=metric');
+        const response=await fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${API_KEY}&units=metric`);
         const data= await response.json();
         if(!data.sys)
         {
@@ -111,7 +111,7 @@ function renderWeatherInfo(weatherInfo)
     description.innerText=weatherInfo?.weather?.[0]?.description;
     weatherIcon.src=`http://openweathermap.org/img/w/${weatherInfo?.weather?.[0]?.icon}.png`;
     temp.innerText=`${weatherInfo?.main?.temp.toFixed(2)} °C`;
-    windspeed.innerText=`${weatherInfo?.main?.spped.toFixed(2)} m/s`;
+    windspeed.innerText=`${weatherInfo?.wind?.spped.toFixed(2)} m/s`;
     humidity.innerText=`${weatherInfo?.main?.humidity.toFixed(2)} %`;
     clouds.innerText=`${weatherInfo?.main?.clouds.all.toFixed(2)} %`;
     
