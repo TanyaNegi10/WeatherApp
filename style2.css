@@ -74,7 +74,9 @@ h2{
 }
 
 .loading-container.active{   
-    display: flex;  
+    display: block;
+    text-align: center;  
+
 }
 
 
@@ -105,6 +107,11 @@ h2{
     margin: 1rem 0.4rem;
 }
 
+
+.btn2 img {
+    object-fit: contain;
+}
+
 .parameterContainer{
     display: flex;
     margin: 2.5rem;
@@ -125,9 +132,9 @@ h2{
     text-align: center;
     display: none;
 }
-.errorContainer.active{
+/* .errorContainer.active{
     display: flex;
-}
+} */
 .erbtn{
     margin: 1rem;
 }
@@ -141,7 +148,8 @@ h2{
     display: none;
 }
 .form-container.active{
-    display: flex;
+    display: block;
+    text-align: center;
 }
 
 
@@ -152,10 +160,10 @@ h2{
    display:block;
 }
 
-
 .userInfoContainer {
     display: none;
 }
 .userInfoContainer.active {
     display:block;
+    text-align: center;
 }
